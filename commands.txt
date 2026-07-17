@@ -1,0 +1,53 @@
+# Practical Session 1: File Management
+
+touch file1.txt
+ls
+cp file1.txt backup.txt
+ls
+mv file1.txt report.txt
+ls
+rm backup.txt
+ls
+touch test.txt
+rm -i test.txt
+touch temp.txt
+rm -f temp.txt
+ls
+
+# Practical Session 2: Directory Management
+
+pwd
+mkdir project
+mkdir -p project/src/utils
+ls
+cd project
+pwd
+cd ..
+ls
+ls -l
+ls -la
+mkdir emptydir
+rmdir emptydir
+rm -r project
+ls
+
+# Practical Session 3: File Permissions
+
+ls -l report.txt
+chmod 644 report.txt
+ls -l report.txt
+
+touch script.sh
+chmod +x script.sh
+ls -l script.sh
+
+chmod 755 script.sh
+ls -l script.sh
+
+chmod u+w report.txt
+ls -l report.txt
+
+whoami
+sudo chown cyberella report.txt
+sudo chown cyberella:cyberella report.txt
+ls -l report.txt
